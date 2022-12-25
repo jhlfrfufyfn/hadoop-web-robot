@@ -24,8 +24,8 @@ docker-compose up -d
 
 ```
 docker cp ${NAME_OF_JAR_FILE} namenode:/tmp
-docker cp input-github.txt namenode:/tmp
-docker cp input-stackoverflow.txt namenode:/tmp
+docker cp input/input-github.txt namenode:/tmp
+docker cp input/input-stackoverflow.txt namenode:/tmp
 ```
 
 5. Copy the input files to the hdfs
@@ -51,5 +51,5 @@ docker exec -it namenode hdfs dfs -get /user/root/output /tmp
 8. Copy the output files from the docker container to the host
 
 ```
-docker cp namenode:/tmp/output .
+docker cp namenode:/tmp/output output/
 ```

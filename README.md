@@ -6,7 +6,7 @@ Specify a website and a depth, and the program will crawl the website and all th
 Input: files in an input hdfs folder containing a list of links to crawl.
 Output: files in output hdfs folder containing the links found.
 ## Usage
-1. Install Hadoop (for example, you can clone docker-hadoop) 
+1. Install Hadoop (for example, you can clone [docker-hadoop](https://github.com/big-data-europe/docker-hadoop))
 
 ```
 git clone https://github.com/big-data-europe/docker-hadoop

@@ -12,7 +12,7 @@ Output: files in output hdfs folder containing the links found.
 git clone https://github.com/big-data-europe/docker-hadoop
 ```
 
-2. Build and run the docker container in uthe directory you put hadoop from step 1:
+2. Build and run the docker container in the directory you put hadoop from step 1:
 
 ```
 docker-compose up -d

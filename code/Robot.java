@@ -70,6 +70,10 @@ public class Robot extends Configured implements Tool {
                 // System.out.println("After output.collect, currentLink: " + currentLink);
 
                 visited.add(currentLink);
+                
+                if (currentLevel == depth) {
+                    continue;
+                }
 
                 try {
                     String rawHTML = readUrl(currentLink);

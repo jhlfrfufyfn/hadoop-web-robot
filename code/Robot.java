@@ -53,12 +53,12 @@ public class Robot extends Configured implements Tool {
             myQueue.add(line);
             level.add(0);
 
-            System.out.println("Line 57, url added to queue: " + line);
+            // System.out.println("Line 57, url added to queue: " + line);
 
             while (!myQueue.isEmpty()) {
                 int currentLevel = level.poll();
                 String currentLink = myQueue.poll();
-                System.out.println("Line 62, currentLevel: " + currentLevel + "currentLink: " + currentLink);
+                // System.out.println("Line 62, currentLevel: " + currentLevel + "currentLink: " + currentLink);
 
                 if (currentLevel > depth) {
                     break;

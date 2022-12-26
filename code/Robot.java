@@ -70,7 +70,7 @@ public class Robot extends Configured implements Tool {
                 // System.out.println("After output.collect, currentLink: " + currentLink);
 
                 visited.add(currentLink);
-                
+
                 if (currentLevel == depth) {
                     continue;
                 }
@@ -86,7 +86,7 @@ public class Robot extends Configured implements Tool {
                         String found = matcher.group();
                         if (visited.contains(found))
                             continue;
-                        System.out.println("Found next url: " + found);
+                        // System.out.println("Found next url: " + found);
                         myQueue.add(found);
                         level.add(currentLevel + 1);
                     }

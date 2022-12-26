@@ -53,3 +53,5 @@ docker exec -it namenode hdfs dfs -get /user/root/output /tmp
 ```
 docker cp namenode:/tmp/output output/
 ```
+
+Output file is generated with depth of 2.

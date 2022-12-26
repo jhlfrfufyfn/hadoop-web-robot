@@ -60,17 +60,17 @@ public class Robot extends Configured implements Tool {
                 String currentLink = myQueue.poll();
                 System.out.println("Line 62, currentLevel: " + currentLevel + "currentLink: " + currentLink);
 
-                output.collect(new Text(currentLink), NullWritable.get());
-
-                // System.out.println("After output.collect, currentLink: " + currentLink);
-
-                // System.out.println("Line 47? IN QUEUE: Visiting: " + currentLink + " (level " + currentLevel + ")");
-
-                visited.add(currentLink);
-
                 if (currentLevel > depth) {
                     break;
                 }
+
+                output.collect(new Text(currentLink), NullWritable.get());
+
+
+                // System.out.println("After output.collect, currentLink: " + currentLink);
+
+                visited.add(currentLink);
+
                 try {
                     String rawHTML = readUrl(currentLink);
                     // System.out.println("Line 75, Raw HTML: " + rawHTML);
